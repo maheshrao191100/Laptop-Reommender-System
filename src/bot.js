@@ -327,7 +327,7 @@ bot.action("gaming", (ctx)=>{
     ramg(ctx);
     bot.action("4g", (ctx)=>{
         bot.telegram.sendMessage(ctx.from.id, "Purpose: Gaming\nRAM: 4GB")
-        bot.telegram.sendPhoto(ctx.from.id, notFound);
+        bot.telegram.sendMessage(ctx.from.id, notFound)
     })
     bot.action("8g", (ctx)=>{
         ctx.deleteMessage();
